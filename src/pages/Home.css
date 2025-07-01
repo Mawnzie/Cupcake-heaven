@@ -1,0 +1,23 @@
+body {
+ background-image: url("cupcakes.webp");
+ background-color: #ae8282;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ background-blend-mode: lighten;
+}
+
+p {
+ font-style: italic;
+}
+
+.title {
+  margin-top: 0px;
+  margin-bottom: 280px;
+
+}
+
+.slogan {
+  margin-top: 0px;
+}
+h2{font-style: italic}
