@@ -1,33 +1,49 @@
-import React from 'react'
-import Header from '../components/Header'
-import NameField from '../components/NameField'
-import {Row, Col, Container, Button, Alert, Breadcrumb, Card} from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './Home.css'
-import NavBar from '../components/NavBar'
+import React from "react";
+import Header from "../components/Header";
+import NameField from "../components/NameField";
+import {
+  Row,
+  Col,
+  Container,
+  Button,
+  Alert,
+  Breadcrumb,
+  Card,
+} from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+//import "./Home.css";
+import NavBar from "../components/Layout/NavBar";
+import Layout from "../components/Layout/Layout";
 export default function Home() {
-  return ( 
-     <Container className="text-center py-2 mt-0" >
-<Row>
-  <Col>
-  <NavBar/>
-    </Col>
-</Row>
+  return (
+    <Layout>
+      <Container className="text-center py-2 mt-0">
+      </Container>
 
-  <Row>
-    <Col>
-      <h1 className="display-1 text-center title">
-        Welcome to CupCake Heaven
-      </h1>
-      <h2 className="display-3 slogan">Bite into bliss — one cupcake at a time.</h2>
-    </Col>
-  </Row>
-</Container>);
+      <Container className="text-center py-2 mt-0">
+        <h1 className="display-1 text-center title">
+          Welcome to CupCake Heaven
+        </h1>
+      </Container>
+      <Container className="text-center py-2 mt-0">
+        <h2 className="display-3 slogan">
+          Bite into bliss — one cupcake at a time.
+        </h2>
+      </Container>
+      <Container className="text-center py-2 mt-0">
+        <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in ligula elit. Aenean egestas nisi consequat enim tincidunt convallis. Morbi et turpis non augue tempus dignissim a et urna. Donec maximus tincidunt purus non sodales. Proin nulla libero, ullamcorper at molestie et, semper eget leo. Nunc varius velit dui. Nam ante ante, sollicitudin in porta in, scelerisque eu magna. Mauris vitae blandit nibh. Nam sodales enim sit amet malesuada semper.
 
-  }
-  
 
-{/*
+    
+        </p>
+      </Container>
+    </Layout>
+  );
+}
+
+{
+  /*
 export default function Home() {
   return (
     <>
@@ -48,4 +64,5 @@ export default function Home() {
       </div>
     </>
   )
-} */}
+} */
+}

@@ -1,0 +1,23 @@
+.layout {
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url('/public/cupcakes.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: lighten;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1; /* expands to fill available vertical space */
+  padding-top: 20px; /* match your fixed navbar height */
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8); /* optional */
+}

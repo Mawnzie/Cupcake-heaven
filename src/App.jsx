@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import { BrowserRouter,Routes,Route,Link } from 'react-router';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -8,27 +6,21 @@ import NoPage from './pages/NoPage';
 import Header from './components/Header';
 import Page from './components/Page';
 import { AccordionButton } from 'react-bootstrap';
+import Products from './pages/Products';
 
 
 function App() {
-  return (
-    <div className="App">
-        <nav>
-            <ul>
-              <li><Link to="/home">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
-            </ul>
-        </nav>
-
+  return (    
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/home" element={<Home />}/>
-        <Route path="/about" element={<AccordionButton/>}/>
+        <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/products" element={<Products/>}/>
         <Route path="*" element={<NoPage/>}/>
       </Routes>
-    </div>
+    </BrowserRouter>
   );
 }
 
